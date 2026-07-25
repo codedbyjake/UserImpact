@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": ["codedbyjake"]
+    },
+    "userimpact-heading": "Heading above the impact panel shown on a user's own user page.",
+    "userimpact-total-edits": "Label for the total-edits stat tile.",
+    "userimpact-last-edited": "Label for the last-edited stat tile.",
+    "userimpact-streak": "Label for the longest-edit-streak stat tile.",
+    "userimpact-days": "Value shown in the streak tile. $1 is the number of days.",
+    "userimpact-no-edits": "Shown instead of a date in the last-edited tile when the user has no edits.",
+    "userimpact-activity-heading": "Heading above the 60-day edit activity bar chart.",
+    "userimpact-period-edits-label": "Label shown next to the big period-total number above the activity chart. $1 is the count, used only for plural selection.",
+    "userimpact-views-heading": "Heading above the list of most-viewed articles the user has edited.",
+    "userimpact-total-views": "Summary line above the most-viewed articles list. $1 is the total view count.",
+    "userimpact-preference-show": "Label for the checkbox in Special:Preferences that lets a user opt in or out of seeing their impact panel.",
+    "prefs-userimpact": "Heading for the preferences section containing the impact-panel visibility checkbox, on the User profile tab of Special:Preferences."
+}

@@ -1,0 +1,59 @@
+{
+  "name": "UserImpact",
+  "version": "1.0.0",
+  "author": "[https://github.com/codedbyjake Jake Linford]",
+  "url": "https://github.com/codedbyjake/UserImpact",
+  "description": "Shows a user their own edit and article-view statistics on their user page.",
+  "license-name": "MIT",
+  "type": "other",
+
+  "manifest_version": 2,
+
+  "requires": {
+    "extensions": {
+      "PageViewInfo": "*"
+    }
+  },
+
+  "AutoloadNamespaces": {
+    "MediaWiki\\Extension\\UserImpact\\": "includes/"
+  },
+
+  "Hooks": {
+    "BeforePageDisplay": "MediaWiki\\Extension\\UserImpact\\Hooks::onBeforePageDisplay",
+    "GetPreferences": "MediaWiki\\Extension\\UserImpact\\Hooks::onGetPreferences",
+    "UserGetDefaultOptions": "MediaWiki\\Extension\\UserImpact\\Hooks::onUserGetDefaultOptions",
+    "PreferencesGetLegend": "MediaWiki\\Extension\\UserImpact\\Hooks::onPreferencesGetLegend"
+  },
+
+  "MessagesDirs": {
+    "UserImpact": [
+      "i18n"
+    ]
+  },
+
+  "ResourceModules": {
+    "ext.userimpact.styles": {
+      "styles": "ext.userimpact.styles.less"
+    }
+  },
+  "ResourceFileModulePaths": {
+    "localBasePath": "resources",
+    "remoteExtPath": "UserImpact/resources"
+  },
+
+  "config": {
+    "UserImpactEnabled": {
+      "value": true,
+      "description": "Master switch for the whole extension. Set to false to disable the impact panel for everyone, regardless of individual preference."
+    },
+    "UserImpactDefaultShow": {
+      "value": false,
+      "description": "Default value of the per-user \"show my impact stats\" preference for users who haven't set it themselves."
+    },
+    "UserImpactPreferencesHeading": {
+      "value": "",
+      "description": "Overrides the heading text for the preferences section containing the impact-panel toggle. Leave empty to use the default (\"Your impact\")."
+    }
+  }
+}

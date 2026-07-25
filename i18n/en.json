@@ -1,0 +1,17 @@
+{
+    "@metadata": {
+        "authors": ["codedbyjake"]
+    },
+    "userimpact-heading": "Your impact",
+    "userimpact-total-edits": "Total edits",
+    "userimpact-last-edited": "Last edited",
+    "userimpact-streak": "Longest streak",
+    "userimpact-days": "$1 {{PLURAL:$1|day|days}}",
+    "userimpact-no-edits": "No edits yet",
+    "userimpact-activity-heading": "Recent activity (last 60 days)",
+    "userimpact-period-edits-label": "{{PLURAL:$1|edit|edits}} in this period",
+    "userimpact-views-heading": "Most viewed articles you've edited",
+    "userimpact-total-views": "$1 total {{PLURAL:$1|view|views}} on articles you've edited (last 60 days)",
+    "userimpact-preference-show": "Show my impact stats on my user page",
+    "prefs-userimpact": "Your impact"
+}
